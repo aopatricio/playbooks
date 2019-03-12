@@ -1,5 +1,5 @@
 ---
-- name: Terminate instance
+- name: Terminante instance.
   ec2:
     instance_ids: "{{ varinstance }}"
     wait: true
@@ -7,7 +7,3 @@
     region: us-east-1
     aws_access_key: "{{ varawskey }}"
     aws_secret_key: "{{ varawssecret }}"
-
-register: ec2
-- name: Print all ec2 variables
-  debug: var=ec2
