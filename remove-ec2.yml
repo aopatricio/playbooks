@@ -1,4 +1,5 @@
 ---
- - hosts: all
+ - hosts: localhost
+   gather_facts: True
    roles:
      - remove-instance
