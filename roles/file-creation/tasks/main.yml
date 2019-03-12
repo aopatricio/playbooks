@@ -1,3 +1,4 @@
 ---
 - name: create a file
   file: path={{ file1 }} state=touch owner=root group=root mode=0644
+     content: {{ conteudo }}
