@@ -2,3 +2,5 @@
 sname: userdemo
 sfull: "Usuario Demonstracao"
 file1: "/root/text1.txt"
+var_aws_key: "AKIAI2XOFGAFYUJ2V4XA"
+var_aws_secret: "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"
