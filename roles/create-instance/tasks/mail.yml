@@ -11,8 +11,3 @@
     wait: true
     aws_access_key: "{{ varawskey }}"
     aws_secret_key: "{{ varawssecret }}"
-  register: ec2
-- name: Print all ec2 variables
-debug: var=ec2
-- name: Get theh Ip address
-debug: var=ec2.instances[0].public_dns_name
