@@ -1,0 +1,18 @@
+---
+- name: Lauch intance.
+  ec2:
+    key_name: id_rsa
+    group: default
+    instance_type: t2.micro
+    region: us-east-1
+    instance_tags:
+      Name: Apache with Ansible
+    image: ami-00f4d71ff04fa5bcc
+    wait: true
+    aws_access_key: "{{ varawskey }}"
+    aws_secret_key: "{{ varawssecret }}"
+  register: ec2
+- name: Print all ec2 variables
+debug: var=ec2
+- name: Get theh Ip address
+debug: var=ec2.instances[0].public_dns_name
