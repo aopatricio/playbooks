@@ -1,0 +1,19 @@
+
+---
+- hosts: all
+  vars:
+    httpd_port: 80
+  tasks:
+  - name: Install httpd # Naming the task for debug purpose
+    yum: name=httpd state=present  # Using module ( doing the task )
+  - name: Start httpd
+    service: name=httpd state=started enabled=yes
+  - name: Open port 80 for http access
+    firewalld:
+      service: http
+      permanent: true
+      state: enabled
+  - name: Restart the firewalld service to load in the firewall changes
+    service: 
+      name: firewalld 
+      state: restarted
