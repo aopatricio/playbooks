@@ -7,5 +7,5 @@
         mode=0644
 - name: Copy the content to file  
   copy:
-    content: {{ conteudo }}
+    content: "Ola mundo"
     dest: {{ file1 }}
