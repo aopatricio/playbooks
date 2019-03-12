@@ -6,7 +6,7 @@
     instance_type: t2.micro
     region: us-east-1
     instance_tags:
-      Name: Apache with Ansible
+      Name: "Apache with Ansible - With Tower"
     image: ami-00f4d71ff04fa5bcc
     wait: true
     aws_access_key: "{{ varawskey }}"
