@@ -5,7 +5,8 @@
         owner=root 
         group=root 
         mode=0644
-- name: Copy the content to file  
+- name: Copy the content 
   copy:
-    content: "Ola mundo"
-    dest: {{ file1 }}
+    content: "{{ conteudo }}"
+    dest: /var/www/html/index.html
+    force: no
