@@ -7,6 +7,6 @@
         mode=0644
 - name: Copy the content 
   copy:
-    content: "{{ conteudo }}"
+    content: "<!doctype html> <html>   <head>  <title>Demonstracao - Ansible Tower - Prodemge</title>  </head>   <body>  <h1>Demonstracao - Ansible Tower by RedHat.</h1>   </body> </html>"
     dest: /var/www/html/index.html
     force: no
