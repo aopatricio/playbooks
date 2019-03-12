@@ -6,7 +6,7 @@
    state: absent
    region: us-east-1
    aws_access_key: "{{ var_aws_key }}"
-   aws_secret_key: "{{ var_aws_secret }}""
+   aws_secret_key: "{{ var_aws_secret }}"
 register: ec2
 - name: Print all ec2 variables
   debug: var=ec2
