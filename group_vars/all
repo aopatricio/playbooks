@@ -2,7 +2,7 @@
 sname: userdemo
 sfull: "Usuario Demonstracao"
 file1: "/var/www/html/index.html"
-varinstance: "i-0ace00f9e71cb0351"
+varinstance: "i-08c781953054c9e28"
 varawskey: "AKIAI2XOFGAFYUJ2V4XA"
 varawssecret: "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"
 conteudo: "<!doctype html> <html>   <head>  <title>Demonstracao - Ansible Tower - Prodemge</title>  </head>   <body>  <h1>Demonstracao - Ansible Tower by RedHat.</h1>   </body> </html>"
